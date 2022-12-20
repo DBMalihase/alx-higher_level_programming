@@ -25,8 +25,7 @@ class Square:
         @property
         def size(self):
             """Retrieves size of square """
-
-            return self.__size
+            return (self.__size)
 
         @size.setter
         def size(self, value):
@@ -42,10 +41,10 @@ class Square:
                 Returns: The square of the size
                 """
 
-                return (self._size ** 2)
+                return (self._size * self.__size)
 
             def my_print(self):
-                """print the square in # """
+                """print the square in #"""
 
                 if self.__size == 0:
                     print()
