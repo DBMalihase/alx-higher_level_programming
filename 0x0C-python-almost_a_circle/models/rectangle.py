@@ -138,7 +138,7 @@ class Rectangle(Base):
         """
             returns a string format of the rectangle
         """
-        return "[{}] ({}) {}/{}"format(type(self).__name__, self.id,
+        return "[{}] ({}) {}/{}".format(type(self).__name__, self.id,
                                         self.__x, self.__y,
                                         self.__width, self.__height)
 
