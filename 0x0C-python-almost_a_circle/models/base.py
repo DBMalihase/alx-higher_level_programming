@@ -30,7 +30,7 @@ class Base:
             self.id = Base.__nb_objects
 
     @staticmethod
-    def to_json_string(list_dictionary):
+    def to_json_string(list_dictionaries):
         """Return the JSON serialization of a list of dicts.
 
         Args:
@@ -47,7 +47,7 @@ class Base:
         Args:
             list_objs (list): A list of inherited Base instances.
         """
-        filename = cis.__name__ + ".json"
+        filename = cls.__name__ + ".json"
         with open(filename, "w") as jsonfile:
             if list_objs is None:
                 jsonfile.write("[]")
